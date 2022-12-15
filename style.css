@@ -1,0 +1,190 @@
+/*
+	Please add your custom CSS in this file. The hex codes for the colours are below.
+
+	Main text color (grey): #838383
+	Dark grey for the speech bubble at the top: #424242
+	Grey border colour for the main content area, and the buttons at the bottom: #DCDCDC
+	Orange colour for the highlighted "only 3 days left" text and the progress bar: #F15E33
+	The background for the part of the progress bar that isn't filled in: #FAFAFA
+	Buttons at the bottom: #838383
+	Green button: #00BE1C
+	Green button border: #01B21A
+	"Why give 50" link: #25A5D8
+*/
+
+
+
+
+
+
+/* My styles   */
+
+
+body {
+    height: 100vh;
+    color: #838383;
+    font-family: Roboto;
+
+
+
+}
+
+
+/* Overall styles for the crowdfund card   */
+
+.crowdfund-card {
+    width: 20rem;
+    margin: 0 auto;
+    margin-top: 10rem;
+}
+
+.speech-bubble {
+    background-color: #424242;
+    color: white;
+    text-align: center;
+    padding: 10px;
+
+}
+
+
+/* Making a triangle by manipulationg the borders of a DIV element   */
+.bubble-triangle {
+    margin-left: 17rem;
+    width: 0;
+    border: 10px solid #424242;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    border-right-color:transparent;
+
+}
+
+/*The HTML5 progress bar was a little bit stubbern, that is why I added a bit more convoluted css...*/
+ progress {
+     box-sizing:border-box;
+     background-color: white;
+    -webkit-appearance: none;
+    accent-color: #F15E33;
+    
+    width: 100%;
+    height: 0.8rem; 
+
+
+
+
+}
+
+progress::-webkit-progress-bar {
+    background-color: #F15E33;
+}
+
+progress::-webkit-progress-value{
+    background-color: #F15E33;
+}
+
+progress::-moz-progress-bar {
+    background-color: #F15E33;
+}
+
+
+
+.info-card p:nth-child(1) strong {
+    color: #F15E33;
+}
+
+
+
+
+/* Style the `form` area  */
+
+.donate {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* I think there is a better way to style this imput.. */
+/* But because I was pressured by time.. I used a second div `.around-input` to quickley define an outer border effect   */
+/* It is a "dirty" solution, but it worked... ha ha ha...   */
+
+
+.around-input {
+    width: 40%;
+    border: 1px solid #DCDCDC;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.around-input input {
+    width: 80%;
+    padding: 8px 0;
+    margin: 0 4px;
+    color: black;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border: none;
+}
+
+button {
+    background-color: #00BE1C;
+    border-color: #01B21A;
+    color: white;
+    font-weight: bold;
+    padding: 8px 20px;
+    border-radius: 2px;
+    border-color: transparent;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+
+/* From the jpeg picture the font seam to have an italic flaviour.. */
+/* So that is why i decided to switch the style for the link ot `font-style: italic`  */
+.info-card a {
+    display: block;
+    color:  #25A5D8;
+    font-size: 0.8rem;
+    margin: 1rem 1rem;
+    font-style: italic; 
+    width: 50%;
+    text-decoration: none;
+
+}
+
+
+.info-card{
+    border: 1px solid #DCDCDC;
+}
+
+p {
+    padding-left: 20px; 
+}
+
+
+
+/* I was not sure about the colors for the bottom buttons, so I used #F6F6F6   */
+/* Because this color seamed the most appropiated */
+.share {
+    display: flex;
+    justify-content: space-between;
+}
+.share a {
+    display: block;
+    width: 40%;
+    color: #838383;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 0.5rem 0.5rem;
+    margin: 10px;
+    background-color: #F6F6F6 ;
+    text-decoration: none;
+}
+
+
+
+
+
+/*THE END */
+/*This is it, I hope it looks decent, because I rushed a bit...*/
+/*Many Thanks :) for the oportunity*/
